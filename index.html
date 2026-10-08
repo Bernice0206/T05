@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutorial 5 - Multi-chart Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Energy Consumption and Electricity Prices</h1>
+        <p>
+            This dashboard explores television energy consumption
+            across different screen technologies and energy ratings,
+            alongside historical electricity spot prices in Australia.
+        </p>
+    </header>
+
+    <main class="dashboard">
+
+        <!-- Chart 1: Scatter Plot -->
+        <section class="chart-card">
+            <h2>TV Energy Consumption vs Star Rating</h2>
+            <p>
+                Relationship between television energy consumption
+                and energy efficiency star ratings.
+            </p>
+            <div id="scatter-chart"></div>
+        </section>
+
+        <!-- Chart 2: Donut Chart -->
+        <section class="chart-card">
+            <h2>Energy Consumption by Screen Technology</h2>
+            <p>
+                Comparison of average energy consumption
+                across different TV screen technologies.
+            </p>
+            <div id="donut-chart"></div>
+        </section>
+
+        <!-- Chart 3: Bar Chart -->
+        <section class="chart-card">
+            <h2>Energy Consumption of 55-inch TVs</h2>
+            <p>
+                Average energy consumption of 55-inch televisions
+                grouped by screen technology.
+            </p>
+            <div id="bar-chart"></div>
+        </section>
+
+        <!-- Chart 4: Line Chart -->
+        <section class="chart-card">
+            <h2>Australian Electricity Spot Prices</h2>
+            <p>
+                Historical electricity spot price trends
+                from 1998 to 2024.
+            </p>
+            <div id="line-chart"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>COS30045 - Data Visualisation | Tutorial 5</p>
+    </footer>
+
+    <script src="js/scatter.js"></script>
+    <script src="js/donut.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/line.js"></script>
+
+</body>
+</html>
